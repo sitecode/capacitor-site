@@ -24,7 +24,7 @@ On Android just download the app project's `google-services.json` file from the 
 
 ## Push Notifications icon
 
-On Android, the Push Notifications icon with the appropriate name should be added to the `AndroidManifest.xml` file:
+On Android, the Push Notifications icon with the appropriate name should be added to the `AndroidManifest.xml` file within the [application component](https://github.com/firebase/quickstart-android/blob/a219d94278faff75774509e5b09fb6d0f02004eb/messaging/app/src/main/AndroidManifest.xml#L13-L22):
 
 ```xml
 <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/push_icon_name" />
@@ -32,7 +32,7 @@ On Android, the Push Notifications icon with the appropriate name should be adde
 
 If no icon is specified Android will use the application icon, but push icon should be white pixels on a transparent backdrop. As the application icon is not usually like that, it will show a white square or circle. So it's recommended to provide the separate icon for Push Notifications.
 
-Android Studio has an icon generator you can use to create your Push Notifications icon.
+Android Studio has an icon generator you can use to create your Push Notifications icon. In version 4, go to `File` > `New` > `Image Asset` and select `Icon Type`: `Notification Icons`.
 
 ## Disabling Push Notifications plugin
 
